@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Repositório de códigos para Arduino
+Arduino é uma plataforma de eletrônicos open-source baseada em uso fácil para hardware e software.
+Os algoritmos aqui compartilhados foram elaborado a partir dos conhecimentos obtidos por meio de vídeos, apostilas, tutoriais e livros. 
 
-You can use the [editor on GitHub](https://github.com/Lawniet/Minicurso-de-Arduino/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Utilização deste repositório
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Para instalar este repositório em sua máquina local é necessário ter o Git instalado (caso não esteja seguir o tutrial de instalção em [instalando o Git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)) e executar os comandos abaixo:
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+git clone https://github.com/Lawniet/Minicurso-de-Arduino/.git
+cd  Minicurso-de-Arduino/
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Lawniet/Minicurso-de-Arduino/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Recomendações de estudos

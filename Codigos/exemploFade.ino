@@ -1,40 +1,38 @@
-/*
-  Fade
+/* Fade:
+  Esse exemplo mostra como realizar uma transição de esvanencimento com o pino
+  9, utilizando a função analogWrite().
 
-  This example shows how to fade an LED on pin 9 using the analogWrite()
-  function.
+   A função analogWrite() usa PWM, portanto, se você deseja alterar o pino,
+   certifique-se de usar outro pino compatível com PWM. Na maioria dos Arduino, 
+   os pinos PWM são identificados com um sinal "~", como ~ 3, ~ 5, ~ 6, ~ 9, ~ 10 e ~ 11.
 
-  The analogWrite() function uses PWM, so if you want to change the pin you're
-  using, be sure to use another PWM capable pin. On most Arduino, the PWM pins
-  are identified with a "~" sign, like ~3, ~5, ~6, ~9, ~10 and ~11.
+  Este código de exemplo está no domínio público.
 
-  This example code is in the public domain.
-
-  http://www.arduino.cc/en/Tutorial/Fade
+  Disponível em: http://www.arduino.cc/en/Tutorial/Fade
 */
 
-int led = 9;           // the PWM pin the LED is attached to
-int brightness = 0;    // how bright the LED is
-int fadeAmount = 5;    // how many points to fade the LED by
+int led = 9;           // O pino PWM ao qual o LED está conectado
+int brilho = 0;    // O quão brilhante estará o LED
+int tempoEsvanecer = 5;    // Quanto tempo para apagar o LED
 
-// the setup routine runs once when you press reset:
+// A rotina de configuração é executada uma vez quando você pressiona reset:
 void setup() {
-  // declare pin 9 to be an output:
+  // Declara o pino 9 para ser uma saída:
   pinMode(led, OUTPUT);
 }
 
-// the loop routine runs over and over again forever:
+// A rotina do loop é executada repetidamente para sempre:
 void loop() {
-  // set the brightness of pin 9:
-  analogWrite(led, brightness);
+  // Define o brilho do pino 9:
+  analogWrite(led, brilho);
 
-  // change the brightness for next time through the loop:
-  brightness = brightness + fadeAmount;
+  // Altera o brilho para a próxima vez no loop:
+  brilho = brilho + tempoEsvanecer;
 
-  // reverse the direction of the fading at the ends of the fade:
-  if (brightness <= 0 || brightness >= 255) {
-    fadeAmount = -fadeAmount;
+  // Inverte a direção do desbotamento nas extremidades:
+  if (brilho <= 0 || brilho >= 255) {
+    tempoEsvanecer = -tempoEsvanecer;
   }
-  // wait for 30 milliseconds to see the dimming effect
+  // Aguarda 30 milissegundos para ver o efeito de escurecimento
   delay(30);
 }

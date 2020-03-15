@@ -5,7 +5,7 @@
   certifique-se de usar outro pino compatível com PWM. Na maioria dos Arduino, 
   os pinos PWM são identificados com um sinal "~", como ~ 3, ~ 5, ~ 6, ~ 9, ~ 10 e ~ 11.
   Este código de exemplo está no domínio público e foi traduzido e adaptado por Lauany Reis 
-  disponível em: <https://www.tinkercad.com/things/ldw2BShp5ml>.
+  disponível em: [TinkCad](https://www.tinkercad.com/things/ldw2BShp5ml).
   Original disponível em: <http://www.arduino.cc/en/Tutorial/Fade>. */
 
 int led = 9;           // O pino PWM ao qual o LED está conectado

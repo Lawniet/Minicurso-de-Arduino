@@ -1,6 +1,6 @@
 /* Controle das das posições de um servo motor utilizando um potenciomêtro (resistor variável) 
-Autor: Michal Rinott <http://people.interaction-ivrea.it/m.rinott> 
-modificado em 8 Nov 2013 por Scott Fitzgerald <http://www.arduino.cc/en/Tutorial/Knob>
+Autor: Michal Rinott, disponível em: <http://people.interaction-ivrea.it/m.rinott>; 
+modificado em 8 Nov 2013 por Scott Fitzgerald disponível em: <http://www.arduino.cc/en/Tutorial/Knob>
 e traduzido por Lauany Reis. */ 
 
 #include <Servo.h> 
